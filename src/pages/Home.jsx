@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
-// import Products from "../components/Product";
+import Products from "../components/Product";
+import Clientele from "../components/Clientele";
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      {/* <Products /> */}
+      <Products />
+      <Clientele />
+      <ContactSection />
     </div>
   );
 }

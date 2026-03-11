@@ -99,9 +99,9 @@ export default function Hero() {
   </div>
 </div>
     </section>
-      <section className="relative bg-[#fffaf6] px-4 pb-16 sm:px-6 lg:px-8">
+      {/* <section className="relative bg-[#fffaf6] px-4 pb-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          {/* unique product stage */}
+          unique product stage
           <div className="relative mt-6">
             <div className="absolute left-1/2 top-10 h-40 w-[90%] -translate-x-1/2 rounded-full bg-[#b87333]/10 blur-3xl" />
 
@@ -123,48 +123,19 @@ export default function Hero() {
 
                   <div className="relative flex h-[210px] items-end justify-center sm:h-[240px]">
                     <div className="absolute bottom-4 h-24 w-24 rounded-full bg-[#dca26e]/25 blur-2xl" />
-
-                    <div
-                      className={`relative rounded-[999px] border-[3px] border-white/70 bg-gradient-to-b from-white via-[#fffaf5] to-[#f3e3d2] shadow-inner ${
-                        size === "250 ml"
-                          ? "h-28 w-14"
-                          : size === "500 ml"
-                          ? "h-36 w-16"
-                          : size === "1 L"
-                          ? "h-44 w-20"
-                          : size === "2 L"
-                          ? "h-52 w-24"
-                          : size === "5 L"
-                          ? "h-56 w-28"
-                          : "h-60 w-32"
-                      }`}
-                    >
-                      <div className="absolute left-1/2 top-[-10px] h-5 w-[42%] -translate-x-1/2 rounded-t-lg rounded-b-md bg-[#b87333]" />
-
-                      <div className="absolute left-1/2 top-[38%] w-[76%] -translate-x-1/2 rounded-2xl border border-[#d7b08b] bg-white/92 px-2 py-2 text-center shadow-sm">
-                        <div className="text-[10px] font-black tracking-widest text-[#b87333]">
-                          MB
-                        </div>
-                        <div className="mt-1 text-[9px] font-bold leading-tight text-[#5b351d]">
-                          MARINE
-                          <br />
-                          COPPER
-                        </div>
+ <div className="absolute left-1/2 top-[38%] w-[76%] -translate-x-1/2 rounded-2xl border border-[#d7b08b] bg-white/92 px-2 py-2 text-center shadow-sm">
+                      <img src={`/250.png`} alt={size} className="h-16 w-auto object-contain" />
                       </div>
-                    </div>
+                   
                   </div>
 
-                  <div className="mt-4 text-center">
-                    <p className="text-xs font-semibold tracking-wide text-[#6e4830] sm:text-sm">
-                      {size}
-                    </p>
-                  </div>
+                  
                 </div>
               ))}
             </div>
           </div>
 
-          {/* bottom stats strip */}
+          bottom stats strip
           <div className="mt-14 grid gap-4 rounded-[30px] border border-white/50 bg-white/60 p-4 shadow-[0_14px_40px_rgba(89,54,26,0.08)] backdrop-blur-md sm:grid-cols-3 sm:p-6">
             <div className="text-center">
               <p className="text-2xl font-black text-[#b87333]">6</p>
@@ -188,7 +159,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

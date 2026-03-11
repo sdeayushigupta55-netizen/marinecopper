@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 const products = [
   {
     size: "250 ml",
-    image: "/bottles/250.png",
+    image: "/250.png",
     price: "₹10",
     desc: "Compact and easy to carry for everyday refreshment.",
   },
@@ -41,7 +41,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="bg-[#fffaf6] py-24 relative overflow-hidden">
+    <section id="products" className="bg-white py-24 relative overflow-hidden">
       
       {/* background glow */}
       <div className="absolute left-1/2 top-20 h-64 w-[85%] -translate-x-1/2 rounded-full bg-[#b87333]/10 blur-3xl" />
@@ -112,7 +112,7 @@ function ProductCard({ item }) {
       style={{ transformStyle: "preserve-3d" }}
     >
       {/* shine effect */}
-      <div className="absolute inset-0 overflow-hidden rounded-[28px]">
+      <div className="absolute inset-0 overflow-hidden rounded-[28px] border border-[#e7c9ab]">
         <div className="absolute -left-20 top-0 h-full w-20 rotate-12 bg-white/40 blur-xl transition-all duration-700 group-hover:left-[120%]" />
       </div>
 

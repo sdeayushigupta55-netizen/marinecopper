@@ -27,11 +27,13 @@ export default function Navbar() {
           </a>
 
           <a
-            href="mailto:email@gmail.com"
+            href="mailto:marinebeveragespvr@gmail.com
+"
             className="flex items-center gap-2 font-medium transition hover:text-[#b87333]"
           >
             <Mail className="h-4 w-4 text-[#b87333]" strokeWidth={2} />
-            <span>email@gmail.com</span>
+            <span>marinebeveragespvr@gmail.com
+</span>
           </a>
         </div>
       </div>
@@ -39,10 +41,14 @@ export default function Navbar() {
       {/* Main Navbar */}
       <div className="border-b border-[#eadcca] bg-white/90 backdrop-blur-md shadow-sm">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <a href="#home" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#b87333] text-sm font-bold text-[#b87333] sm:h-12 sm:w-12 sm:text-base">
-              MB
-            </div>
+          <a href="#home" className="flex items-center ">
+            <div className="flex h-15 w-30 items-center justify-center">
+  <img
+    src="/logo.png"
+    alt="Marine Copper Logo"
+    className="w-auto object-contain"
+  />
+</div>
 
             <div className="leading-tight">
               <h2 className="text-base font-bold tracking-wide text-[#6b4423] sm:text-xl">
@@ -124,14 +130,16 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="mailto:email@gmail.com"
+                  href="mailto:marinebeveragespvr@gmail.com
+"
                   className="flex items-center gap-2 transition hover:text-[#b87333]"
                 >
                   <Mail
                     className="h-4 w-4 shrink-0 text-[#b87333]"
                     strokeWidth={2}
                   />
-                  <span>email@gmail.com</span>
+                  <span>marinebeveragespvr@gmail.com
+</span>
                 </a>
               </div>
             </div>
