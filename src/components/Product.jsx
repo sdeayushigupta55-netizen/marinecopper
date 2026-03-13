@@ -4,52 +4,54 @@ const products = [
   {
     size: "250 ml",
     image: "/250.png",
-    price: "₹10",
+    price: "Rs 220",
+    pack: "Pack of 48 bottles",
     desc: "Compact and easy to carry for everyday refreshment.",
   },
   {
     size: "500 ml",
-    image: "/bottles/500.png",
-    price: "₹20",
+    image: "/500.png",
+    price: "Rs 180",
+    pack: "Pack of 24 bottles",
     desc: "Perfect bottle for travel, office, and daily hydration.",
   },
   {
     size: "1 L",
-    image: "/bottles/1l.png",
-    price: "₹30",
+    image: "/1liter.png",
+    price: "Rs 150",
+    pack: "Pack of 12 bottles",
     desc: "Balanced size for personal hydration anytime.",
   },
   {
     size: "2 L",
-    image: "/bottles/2l.png",
-    price: "₹40",
+    image: "/2liter.png",
+    price: "Rs 120",
+    pack: "Pack of 9 bottles",
     desc: "Ideal for family usage and longer hydration needs.",
   },
   {
     size: "5 L",
-    image: "/bottles/5l.png",
-    price: "₹80",
+    image: "/5liter.png",
+    price: "Rs 50",
+    pack: "Jar",
     desc: "Convenient large pack for home and workplace.",
   },
   {
     size: "20 L",
-    image: "/bottles/20l.png",
-    price: "₹120",
+    image: "/20liter.png",
+    price: "Rs 80",
+    pack: "Jar",
     desc: "Best for offices, events, and bulk water usage.",
   },
 ];
 
 export default function Products() {
   return (
-    <section id="products" className="bg-white py-24 relative overflow-hidden">
-      
-      {/* background glow */}
+    <section id="products" className="relative overflow-hidden bg-white py-24">
       <div className="absolute left-1/2 top-20 h-64 w-[85%] -translate-x-1/2 rounded-full bg-[#b87333]/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-        {/* heading */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#b87333]">
             Our Products
           </p>
@@ -64,28 +66,24 @@ export default function Products() {
           </p>
         </div>
 
-        {/* product grid */}
-       <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {products.map((item) => (
             <ProductCard key={item.size} item={item} />
           ))}
-
         </div>
-
       </div>
     </section>
   );
 }
 
-/* product card */
 function ProductCard({ item }) {
   const cardRef = useRef(null);
 
   const handleMouseMove = (e) => {
     const card = cardRef.current;
-    const rect = card.getBoundingClientRect();
+    if (!card) return;
 
+    const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
@@ -95,11 +93,12 @@ function ProductCard({ item }) {
     const rotateX = -(y - centerY) / 18;
     const rotateY = (x - centerX) / 18;
 
-    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
   };
 
   const handleMouseLeave = () => {
     const card = cardRef.current;
+    if (!card) return;
     card.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
   };
 
@@ -108,58 +107,50 @@ function ProductCard({ item }) {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="group relative rounded-[28px] border border-white/60 bg-white/70 p-5 backdrop-blur-xl shadow-[0_18px_50px_rgba(78,47,23,0.08)] transition duration-500"
+      className="group relative rounded-[30px] border border-[#ecd7c2] bg-white/80 p-5 shadow-[0_18px_50px_rgba(78,47,23,0.08)] backdrop-blur-xl transition duration-500"
       style={{ transformStyle: "preserve-3d" }}
     >
-      {/* shine effect */}
-      <div className="absolute inset-0 overflow-hidden rounded-[28px] border border-[#e7c9ab]">
-        <div className="absolute -left-20 top-0 h-full w-20 rotate-12 bg-white/40 blur-xl transition-all duration-700 group-hover:left-[120%]" />
+      {/* shine */}
+      <div className="absolute inset-0 overflow-hidden rounded-[30px]">
+        <div className="absolute -left-24 top-0 h-full w-20 rotate-12 bg-white/40 blur-xl transition-all duration-700 group-hover:left-[120%]" />
       </div>
 
-      {/* top row */}
-      <div className="flex items-center justify-between">
-        <span className="rounded-full bg-[#f6e7d8] px-3 py-1 text-[11px] font-bold tracking-wider text-[#a86430]">
-          {item.size}
-        </span>
-
-        <span className="rounded-full border border-[#e7c9ab] bg-white px-3 py-1 text-[11px] font-bold text-[#b87333]">
-          MRP {item.price}
-        </span>
-      </div>
-
-      {/* bottle area */}
-      <div className="relative mt-6 flex h-[220px] items-center justify-center">
-
-        {/* glow */}
-        <div className="absolute bottom-4 h-24 w-24 rounded-full bg-[#dca26e]/25 blur-2xl transition group-hover:h-28 group-hover:w-28" />
-
-        {/* reflection */}
+      {/* bottle image */}
+      <div className="relative mt-2 flex  items-center justify-center">
+        <div className="absolute bottom-5 h-24 w-24 rounded-full bg-[#dca26e]/25 blur-2xl transition group-hover:h-28 group-hover:w-28" />
         <div className="absolute bottom-2 h-3 w-24 rounded-full bg-black/10 blur-md" />
 
-        {/* bottle */}
         <img
           src={item.image}
           alt={item.size}
-          className="relative z-10 h-full object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.15)] animate-floatBottle transition duration-500 group-hover:scale-110"
+          className="relative z-10 h-full object-contain drop-shadow-[0_20px_25px_rgba(0,0,0,0.15)] transition duration-500 group-hover:scale-110"
         />
       </div>
 
-      {/* text */}
-      <div className="mt-5 text-center">
-        <h3 className="text-lg font-bold text-[#5b351d]">{item.size}</h3>
+      {/* content */}
+      <div className="relative z-10 mt-5 text-center">
+        <h3 className="text-2xl font-extrabold text-[#5b351d]">{item.size}</h3>
 
-        <p className="mt-2 text-sm text-[#6e4830] leading-6">
-          {item.desc}
-        </p>
+        {/* pack + price only once */}
+        <div className="mt-4 rounded-2xl border border-[#ecd7c2] bg-[#fff8f2] px-4 py-3 shadow-sm">
+          <div className="flex items-center justify-between gap-3 text-sm">
+            <span className="font-medium text-[#6e4830]">{item.pack}</span>
+            <span className="rounded-full bg-[#b87333] px-3 py-1 text-xs font-bold text-white">
+              {item.price}
+            </span>
+          </div>
+        </div>
+
+        <p className="mt-4 text-sm leading-6 text-[#6e4830]">{item.desc}</p>
       </div>
 
       {/* button */}
-      <div className="mt-6">
+      <div className="relative z-10 mt-6">
         <a
           href="#contact"
-          className="flex items-center justify-center rounded-full border border-[#d7b08b] bg-white/80 px-4 py-2 text-sm font-semibold text-[#a86430] transition hover:bg-[#b87333] hover:text-white"
+          className="flex items-center justify-center rounded-full bg-[#b87333] px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:scale-[1.02] hover:bg-[#9f6229]"
         >
-          Enquire
+          Enquire Now
         </a>
       </div>
     </div>

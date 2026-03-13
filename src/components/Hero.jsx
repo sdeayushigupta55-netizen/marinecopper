@@ -94,7 +94,7 @@ export default function Hero() {
       </div>
     </div>
       <p className="text-sm font-bold uppercase tracking-[0.38em] text-[#b87333] mt-4">
-        # Kill Your Thirst
+        # Chill Your Thirst
       </p>
   </div>
 </div>

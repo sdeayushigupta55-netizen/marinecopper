@@ -19,11 +19,11 @@ export default function Navbar() {
       <div className="border-b border-[#eadcca] bg-[#fff7ef]">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2 text-xs text-[#7a4c2c] sm:flex-row sm:px-6 lg:px-8">
           <a
-            href="tel:18001211007"
+            href="tel:+91 7409955535"
             className="flex items-center gap-2 font-medium transition hover:text-[#b87333]"
           >
             <Phone className="h-4 w-4 text-[#b87333]" strokeWidth={2} />
-            <span>1800 121 1007</span>
+            <span>+91 7409955535</span>
           </a>
 
           <a
@@ -119,14 +119,14 @@ export default function Navbar() {
 
               <div className="mt-3 space-y-3 border-t border-[#f1e3d4] pt-4 text-sm text-[#7a4c2c]">
                 <a
-                  href="tel:18001211007"
+                  href="tel:+91 7409955535"
                   className="flex items-center gap-2 transition hover:text-[#b87333]"
                 >
                   <Phone
                     className="h-4 w-4 shrink-0 text-[#b87333]"
                     strokeWidth={2}
                   />
-                  <span>1800 121 1007</span>
+                  <span>+91 7409955535</span>
                 </a>
 
                 <a

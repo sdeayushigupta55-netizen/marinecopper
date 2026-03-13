@@ -92,9 +92,13 @@ export default function ContactSection() {
                 Call Us
               </h3>
 
-              <p className="mt-2 text-[#6b4a34]">
-                1800 121 1007
-              </p>
+                <a
+                href="tel:+91 7409955535"
+              className="mt-2 text-[#6b4a34]"
+              >
+              
+                +91 7409955535
+              </a>
             </div>
 
             {/* email */}
@@ -210,11 +214,11 @@ export default function ContactSection() {
             <div className="mt-4 space-y-3 text-sm text-[#e9d6c4]">
 
               <a
-                href="tel:18001211007"
+                href="tel:+91 7409955535"
                 className="flex items-center gap-2 hover:text-white transition"
               >
                 <Phone size={16} />
-                1800 121 1007
+                +91 7409955535
               </a>
 
               <a

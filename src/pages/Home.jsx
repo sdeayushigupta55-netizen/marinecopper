@@ -5,6 +5,7 @@ import About from "../components/About";
 import Products from "../components/Product";
 import Clientele from "../components/Clientele";
 import ContactSection from "../components/ContactSection";
+import ChatBot from "../components/ChatBot";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Products />
       <Clientele />
       <ContactSection />
+      <ChatBot/>
     </div>
   );
 }
