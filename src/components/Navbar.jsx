@@ -49,13 +49,13 @@ export default function Navbar() {
         <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
           {/* Logo */}
           <a href="#home" className="flex min-w-0 items-center gap-3">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center sm:h-14 sm:w-14">
-              <img
-                src="/logo.png"
-                alt="Marine Copper Logo"
-                className="h-full w-full object-contain"
-              />
-            </div>
+           <div className="flex h-10 w-auto items-center justify-center sm:h-14">
+  <img
+    src="/logo.png"
+    alt="Marine Copper Logo"
+    className="h-full w-auto object-contain"
+  />
+</div>
 
             <div className="min-w-0 leading-tight">
               <h2 className="truncate text-sm font-bold tracking-wide text-[#6b4423] sm:text-lg lg:text-xl">
