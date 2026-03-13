@@ -123,7 +123,7 @@ export default function ChatBot() {
           {/* whatsapp CTA */}
           <div className="border-t border-[#f0dfcf] bg-[#fffaf6] px-3 py-3">
             <a
-              href="https://wa.me/971524400151?text=Hello%20I%20want%20to%20know%20more%20about%20Marine%20Copper%20water."
+              href="https://wa.me/917409955535?text=Hello%20Marine%20Copper!%20I%20have%20a%20query%20regarding%20your%20products."
               target="_blank"
               rel="noreferrer"
               className="flex w-full items-center justify-center rounded-full bg-emerald-500 px-4 py-3 text-sm font-semibold text-white transition hover:bg-emerald-600"
