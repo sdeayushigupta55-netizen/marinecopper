@@ -3,28 +3,30 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="border-t border-[#f1e3d4] bg-white py-20">
+    <section id="contact"  className="relative overflow-hidden bg-[#fffaf6]  py-14 sm:py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Heading */}
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#b87333]">
-            Contact
-          </p>
+     <div className="mx-auto max-w-3xl text-center">
 
-          <h2 className="mt-4 text-4xl font-black text-[#5b351d] sm:text-5xl">
-            Get In Touch
-          </h2>
+  <p className="inline-block rounded-full bg-[#fff2e6] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.35em] text-[#b87333] border border-[#f1d9c6]">
+    Contact
+  </p>
 
-          <p className="mt-5 text-lg text-[#6b4a34]">
-            Have questions or want to partner with us? Reach out anytime.
-          </p>
-        </div>
+  <h2 className="mt-5 text-4xl font-black text-[#5b351d] sm:text-5xl">
+    Get In Touch
+  </h2>
+
+  <p className="mt-5 text-base leading-8 text-[#6b4a34] sm:text-lg">
+    Have questions or want to partner with us? Reach out anytime.
+  </p>
+
+</div>
 
         {/* Contact Info Cards */}
         <div className="mt-14 grid gap-8 md:grid-cols-3">
           
-          <div className="rounded-[28px] bg-[#fff7ef] p-8 text-center">
+          <div className="rounded-[28px] border border-[#f1e3d4] bg-white p-8 text-center">
             <Phone className="mx-auto text-[#b87333]" size={32} />
 
             <h3 className="mt-4 font-bold text-[#5b351d]">Call Us</h3>
@@ -37,7 +39,7 @@ export default function ContactSection() {
             </a>
           </div>
 
-          <div className="rounded-[28px] bg-[#fff7ef] p-8 text-center">
+          <div className="rounded-[28px] border border-[#f1e3d4] bg-white p-8 text-center">
             <Mail className="mx-auto text-[#b87333]" size={32} />
 
             <h3 className="mt-4 font-bold text-[#5b351d]">Email</h3>
@@ -50,7 +52,7 @@ export default function ContactSection() {
             </a>
           </div>
 
-          <div className="rounded-[28px] bg-[#fff7ef] p-8 text-center">
+          <div className="rounded-[28px] border border-[#f1e3d4] bg-white p-8 text-center">
             <MapPin className="mx-auto text-[#b87333]" size={32} />
 
             <h3 className="mt-4 font-bold text-[#5b351d]">Location</h3>
@@ -63,7 +65,7 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Form */}
-        <div className="mt-16 mx-auto max-w-3xl rounded-[28px] border border-[#f1e3d4] bg-[#fffaf6] p-8 shadow-sm">
+        <div className="mt-16 mx-auto max-w-3xl rounded-[28px] border border-[#f1e3d4] bg-white p-8 shadow-sm">
 
           <h3 className="text-2xl font-bold text-[#5b351d] text-center">
             Send Us a Message

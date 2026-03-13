@@ -2,23 +2,25 @@ import React from "react";
 
 export default function WorkSection() {
   return (
-    <section id="work" className="bg-[#fffaf6] py-20">
+    <section id="work" className="bg-white overflow-hidden py-14 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#b87333]">
-            Work With Us
-          </p>
+      <div className="mx-auto max-w-3xl text-center">
 
-          <h2 className="mt-4 text-4xl font-black text-[#5b351d] sm:text-5xl">
-            Become Our Distributor
-          </h2>
+  <p className="inline-block rounded-full bg-[#fff2e6] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.35em] text-[#b87333] border border-[#f1d9c6]">
+    Work With Us
+  </p>
 
-          <p className="mt-5 text-lg leading-8 text-[#6b4a34]">
-            Partner with Marine Copper and bring premium packaged drinking
-            water to your city. We are expanding our distribution network
-            across retail stores, offices, and hospitality sectors.
-          </p>
-        </div>
+  <h2 className="mt-5 text-4xl font-black text-[#5b351d] sm:text-5xl">
+    Become Our Distributor
+  </h2>
+
+  <p className="mt-5 text-base leading-8 text-[#6b4a34] sm:text-lg">
+    Partner with Marine Copper and bring premium packaged drinking
+    water to your city. We are expanding our distribution network
+    across retail stores, offices, and hospitality sectors.
+  </p>
+
+</div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           <div className="rounded-[28px] border border-[#f1e3d4] bg-white p-8 shadow-sm">

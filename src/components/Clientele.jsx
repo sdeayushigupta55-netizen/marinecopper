@@ -28,18 +28,19 @@ export default function Clientele() {
   return (
     <section
       id="clientele"
-      className="relative overflow-hidden bg-white py-20"
-    >
+    
+     className="relative overflow-hidden bg-[#fffaf6]  py-14 sm:py-16 md:py-20 lg:py-24">
+  
       {/* background glow */}
       <div className="absolute left-1/2 top-16 h-52 w-[80%] -translate-x-1/2 rounded-full bg-[#b87333]/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* heading */}
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#b87333]">
-            Clientele
-          </p>
-
+          
+ <p className="inline-block rounded-full bg-[#fff2e6] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.35em] text-[#b87333] border border-[#f1d9c6]">
+  Clientele
+</p>
           <h2 className="mt-4 text-4xl font-black text-[#5b351d] sm:text-5xl">
             Trusted Across Every Need
           </h2>

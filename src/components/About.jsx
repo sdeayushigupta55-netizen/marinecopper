@@ -3,18 +3,18 @@ import { Droplets, ShieldCheck, Truck } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#fffaf6] py-20">
+    <section id="about" className="relative overflow-hidden bg-[#fffaf6]  py-14 sm:py-16 md:py-20 lg:py-24" >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Section Heading */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[#b87333]">
-            About Us
-          </p>
+         <p className="inline-block rounded-full bg-[#fff2e6] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.35em] text-[#b87333] border border-[#f1d9c6]">
+  About Us
+</p>
 
-          <h2 className="mt-4 text-4xl font-bold text-[#5b351d] sm:text-5xl">
-            Pure Hydration with a Premium Touch
-          </h2>
+<h2 className="mt-5 text-4xl font-black text-[#5b351d] sm:text-5xl">
+  Premium Hydration for Everyday Life
+</h2>
 
           <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-[#b87333]" />
         </div>
