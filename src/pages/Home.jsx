@@ -7,7 +7,7 @@ import Clientele from "../components/Clientele";
 import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
-// import ChatBot from "../components/ChatBot";
+import ChatBot from "../components/ChatBot";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <WorkSection />
       <ContactSection />
       <Footer />
-      {/* <ChatBot/> */}
+      <ChatBot/>
     </div>
   );
 }

@@ -58,7 +58,7 @@ export default function ContactSection() {
             <h3 className="mt-4 font-bold text-[#5b351d]">Location</h3>
 
             <p className="mt-2 text-sm text-[#6b4a34]">
-              Uttar Pradesh, Mathura, India
+            YAMUNA SHAKTI DHAM GOKUL, 21/22, Gokul, Mathura, Uttar Pradesh 281303
             </p>
           </div>
 
