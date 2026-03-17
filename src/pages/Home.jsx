@@ -8,6 +8,7 @@ import WorkSection from "../components/WorkSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import ChatBot from "../components/ChatBot";
+import Gallery from "../components/Gallery";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Products />
       <Clientele />
       <WorkSection />
+      <Gallery/>
       <ContactSection />
       <Footer />
       <ChatBot/>

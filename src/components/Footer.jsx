@@ -5,6 +5,7 @@ import {
   Facebook,
   Instagram,
   YoutubeIcon,
+  X 
 } from "lucide-react";
 
 export default function Footer() {
@@ -66,6 +67,14 @@ export default function Footer() {
                   className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20"
                 >
                   <YoutubeIcon size={18} />
+                </a>
+                <a
+                  href="https://x.com/MarineBeverages"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20"
+                >
+                  <X size={18} />
                 </a>
               </div>
             </div>

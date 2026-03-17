@@ -95,9 +95,10 @@ export default function ContactSection() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="inline-flex items-center rounded-full border border-[#efd7c1] bg-white/80 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.28em] text-[#b87333] shadow-sm backdrop-blur sm:px-4 sm:text-[11px] sm:tracking-[0.38em]">
-            Contact
-          </p>
+           <p className="inline-block rounded-full bg-[#fff2e6] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.35em] text-[#b87333] border border-[#f1d9c6]">
+    Contact
+  </p>
+
 
           <h2 className="mt-4 text-3xl font-black tracking-tight text-[#5b351d] sm:mt-5 sm:text-4xl md:text-5xl lg:text-6xl">
             Let’s Start a Conversation
