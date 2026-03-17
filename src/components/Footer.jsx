@@ -1,5 +1,11 @@
-import React from "react";
-import { Phone, Mail, Linkedin } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  Linkedin,
+  Facebook,
+  Instagram,
+  YoutubeIcon,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -30,6 +36,39 @@ export default function Footer() {
               freshness, and hydration across every bottle size from
               250 ml to 20 L.
             </p>
+             {/* social media */}
+            <div className="mt-5">
+             
+
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61587736598900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20"
+                >
+                  <Facebook size={18} />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/marine_copper/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20"
+                >
+                  <Instagram size={18} />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@marinebeverages-braj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20"
+                >
+                  <YoutubeIcon size={18} />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* quick links */}
@@ -83,14 +122,21 @@ export default function Footer() {
                 className="flex items-start gap-2 transition hover:text-white"
               >
                 <Mail size={16} className="mt-0.5 shrink-0" />
-                <span className="break-all">marinebeveragespvr@gmail.com</span>
+                <span className="break-all">
+                  marinebeveragespvr@gmail.com
+                </span>
               </a>
             </div>
+
+           
           </div>
         </div>
 
+        {/* bottom */}
         <div className="mt-10 space-y-2 border-t border-white/20 pt-6 text-center text-sm text-[#e9d6c4]">
-          <p>© {new Date().getFullYear()} Marine Copper. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Marine Copper. All rights reserved.
+          </p>
 
           <a
             href="https://www.linkedin.com/in/ayushi-gupta-89861315b/"

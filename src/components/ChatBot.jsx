@@ -67,12 +67,27 @@ export default function ChatBot() {
   return (
     <>
       {/* floating chatbot button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#b87333] text-white shadow-lg transition hover:scale-105"
-      >
-        {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
-      </button>
+<div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+
+  {/* animated text */}
+  {!isOpen && (
+    <div className="animate-bounce rounded-full bg-white px-3 py-1 text-xs font-medium text-[#5b351d] shadow-md">
+      We're here to help 👋
+    </div>
+  )}
+
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="flex h-14 w-14 items-center justify-center rounded-full bg-[#b87333] text-white shadow-lg transition hover:scale-105"
+  >
+    {isOpen ? (
+      <X size={24} />
+    ) : (
+      <span className="text-3xl">💬</span>
+    )}
+  </button>
+
+</div>
 
       {/* chatbot box */}
       {isOpen && (
