@@ -9,6 +9,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import ChatBot from "../components/ChatBot";
 import Gallery from "../components/Gallery";
+import Payment from "../components/Payment";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <WorkSection />
       <Gallery/>
       <ContactSection />
+      <Payment/>
       <Footer />
       <ChatBot/>
     </div>
